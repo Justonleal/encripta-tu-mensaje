@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripta tu Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="encriptador">
+            <textarea
+                name="texto"
+                class="texto"
+                id="texto"
+                cols="30"
+                rows="10"
+                placeholder="Ingresa texto a encriptar aqui"
+            ></textarea>    
+        </div>
+        <div class="terminos">
+            <p>solo letras minusculas sin acento</p>
+        </div>
+        <div class="botones">
+            <button class="btnencriptador" type="button" onclick="encriptar()">encriptar</button>
+            <button class="btndesencriptador" type="button" onclick="desencriptar()">desencriptar</button>
+        </div>
+    
+        <div class="textoEncriptado">
+            <img src="img/esquema.png" alt="" id="esquema">
+            <div class="mesanje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
+                <p id="parrafor-interno">Ingresa el texto que deseas encriptar o desencriptar</p>
+               <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
