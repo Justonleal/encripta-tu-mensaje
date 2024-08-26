@@ -1,7 +1,7 @@
 function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
-    let parrafo = document.getElementById("parrafor-interno");
+    let parrafo = document.getElementById("parrafo-interno");
     let esquema = document.getElementById("esquema");
 
     let textoCifrado = texto
@@ -12,10 +12,10 @@ function encriptar() {
          .replace(/u/gi, "ufat");
     
     if (texto.length !=0) {
-        document.getElementById("texto").value = textoCifrado;
-        tituloMensaje.textContent = "";
+        document.getElementById("texto").value = "";
+        tituloMensaje.textContent = "El mensaje encriptado es el siguiente:";
         parrafo.textContent = textoCifrado;
-        esquema.src = "";
+        esquema.src = "./img/cartel.jpg";
     } else {
         esquema.src = "./img/esquema.png"
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
@@ -28,7 +28,7 @@ function encriptar() {
 function desencriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
-    let parrafo = document.getElementById("parrafor-interno");
+    let parrafo = document.getElementById("parrafo-interno");
     let esquema = document.getElementById("esquema");
 
     let textoCifrado = texto
@@ -39,10 +39,10 @@ function desencriptar() {
     .replace(/ufat/gi, "u");
 
     if (texto.length !=0) {
-        texto.value = textoCifrado;
-        tituloMensaje.textContent = "";
+        document.getElementById("texto").value = "";
+        tituloMensaje.textContent = "Tu mesaje desencriptado es el siguiente:";
         parrafo.textContent = textoCifrado;
-        esquema.src = "";
+        esquema.src = "./img/cartel.jpg";
     } else {
         esquema.src = "./img/esquema.png"
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";

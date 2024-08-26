@@ -12,6 +12,14 @@
 
 }
 
+.contenedor img {
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    top: 5%;
+    left: 2%;
+}
+
 .texto{
     position: absolute;
     width: 40%;
@@ -182,6 +190,14 @@
         flex-direction: row;
     }
 
+    .contenedor img {
+        position: absolute;
+        width: 3%;
+        height: 3%;
+        top: 1%;
+        left: 10%;
+        
+    }
     .encriptador{
         width: 100%;
 
